@@ -6,13 +6,72 @@
 	objectVersion = 60;
 	objects = {
 
-/* Begin PBXFileReference section */
-		B1B910312D05479A007FEF16 /* aoe2-synthetic-data.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "aoe2-synthetic-data.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-/* End PBXFileReference section */
+/* Begin PBXBuildFile section */
+		B14EA00D2D16820000FC1354 /* lbrite.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B14EA00C2D16820000FC1354 /* lbrite.ttf */; };
+		B14EA00F2D16821600FC1354 /* lbrited.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B14EA00E2D16821600FC1354 /* lbrited.ttf */; };
+		B14EA0112D1751DC00FC1354 /* AgeQueueAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14EA0102D1751D200FC1354 /* AgeQueueAnnotation.swift */; };
+		B14EA0132D17661900FC1354 /* SyntheticDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14EA0122D17661900FC1354 /* SyntheticDataManager.swift */; };
+		B14EA0152D17683400FC1354 /* Annotations.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14EA0142D17683400FC1354 /* Annotations.swift */; };
+		B14EA0172D17685500FC1354 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14EA0162D17685500FC1354 /* Resource.swift */; };
+		B14EA0192D17686900FC1354 /* CivType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14EA0182D17686900FC1354 /* CivType.swift */; };
+		B14EA01B2D17687B00FC1354 /* ImageTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14EA01A2D17687B00FC1354 /* ImageTag.swift */; };
+		B14EA0662D189D5300FC1354 /* AgeAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14EA0652D189D5300FC1354 /* AgeAnnotation.swift */; };
+		B14EA0682D19417900FC1354 /* ComprehensiveSyntheticDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14EA0672D19417900FC1354 /* ComprehensiveSyntheticDataManager.swift */; };
+		B18DCE052D10EC89007C48AE /* centbd.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B18DCDFD2D10EC89007C48AE /* centbd.ttf */; };
+		B18DCE062D10EC89007C48AE /* centrg_.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B18DCDFF2D10EC89007C48AE /* centrg_.ttf */; };
+		B18DCE072D10EC89007C48AE /* georgiaz.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B18DCE032D10EC89007C48AE /* georgiaz.ttf */; };
+		B18DCE082D10EC89007C48AE /* georgiai.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B18DCE022D10EC89007C48AE /* georgiai.ttf */; };
+		B18DCE092D10EC89007C48AE /* lblack.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B18DCE042D10EC89007C48AE /* lblack.ttf */; };
+		B18DCE0A2D10EC89007C48AE /* centit_.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B18DCDFE2D10EC89007C48AE /* centit_.ttf */; };
+		B18DCE0B2D10EC89007C48AE /* georgia.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B18DCE002D10EC89007C48AE /* georgia.ttf */; };
+		B18DCE0C2D10EC89007C48AE /* georgiab.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B18DCE012D10EC89007C48AE /* georgiab.ttf */; };
+		B1CA3FE02D094254004AA52F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1CA3FD12D094254004AA52F /* Preview Assets.xcassets */; };
+		B1CA3FE12D094254004AA52F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1CA3FD72D094254004AA52F /* Assets.xcassets */; };
+		B1CA3FE32D094254004AA52F /* AnnotationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CA3FD32D094254004AA52F /* AnnotationFactory.swift */; };
+		B1CA3FE42D094254004AA52F /* aoe2_synthetic_dataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CA3FD52D094254004AA52F /* aoe2_synthetic_dataApp.swift */; };
+		B1CA3FE52D094254004AA52F /* AOEMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CA3FD62D094254004AA52F /* AOEMenuView.swift */; };
+		B1CA3FE62D094254004AA52F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CA3FD82D094254004AA52F /* ContentView.swift */; };
+		B1CA3FE72D094254004AA52F /* GameAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CA3FD92D094254004AA52F /* GameAnnotation.swift */; };
+		B1CA3FE82D094254004AA52F /* PNGSavingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CA3FDB2D094254004AA52F /* PNGSavingView.swift */; };
+		B1CA3FE92D094254004AA52F /* ResourceAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CA3FDC2D094254004AA52F /* ResourceAnnotation.swift */; };
+		B1CA3FEA2D094254004AA52F /* saveAsPNG.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CA3FDD2D094254004AA52F /* saveAsPNG.swift */; };
+		B1CA3FEB2D094254004AA52F /* VillagerAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CA3FDE2D094254004AA52F /* VillagerAnnotation.swift */; };
+/* End PBXBuildFile section */
 
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		B1B910332D05479A007FEF16 /* aoe2-synthetic-data */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "aoe2-synthetic-data"; sourceTree = "<group>"; };
-/* End PBXFileSystemSynchronizedRootGroup section */
+/* Begin PBXFileReference section */
+		B14EA00C2D16820000FC1354 /* lbrite.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = lbrite.ttf; sourceTree = "<group>"; };
+		B14EA00E2D16821600FC1354 /* lbrited.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = lbrited.ttf; sourceTree = "<group>"; };
+		B14EA0102D1751D200FC1354 /* AgeQueueAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeQueueAnnotation.swift; sourceTree = "<group>"; };
+		B14EA0122D17661900FC1354 /* SyntheticDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyntheticDataManager.swift; sourceTree = "<group>"; };
+		B14EA0142D17683400FC1354 /* Annotations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Annotations.swift; sourceTree = "<group>"; };
+		B14EA0162D17685500FC1354 /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
+		B14EA0182D17686900FC1354 /* CivType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CivType.swift; sourceTree = "<group>"; };
+		B14EA01A2D17687B00FC1354 /* ImageTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTag.swift; sourceTree = "<group>"; };
+		B14EA0652D189D5300FC1354 /* AgeAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeAnnotation.swift; sourceTree = "<group>"; };
+		B14EA0672D19417900FC1354 /* ComprehensiveSyntheticDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComprehensiveSyntheticDataManager.swift; sourceTree = "<group>"; };
+		B18DCDFD2D10EC89007C48AE /* centbd.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = centbd.ttf; sourceTree = "<group>"; };
+		B18DCDFE2D10EC89007C48AE /* centit_.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = centit_.ttf; sourceTree = "<group>"; };
+		B18DCDFF2D10EC89007C48AE /* centrg_.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = centrg_.ttf; sourceTree = "<group>"; };
+		B18DCE002D10EC89007C48AE /* georgia.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = georgia.ttf; sourceTree = "<group>"; };
+		B18DCE012D10EC89007C48AE /* georgiab.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = georgiab.ttf; sourceTree = "<group>"; };
+		B18DCE022D10EC89007C48AE /* georgiai.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = georgiai.ttf; sourceTree = "<group>"; };
+		B18DCE032D10EC89007C48AE /* georgiaz.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = georgiaz.ttf; sourceTree = "<group>"; };
+		B18DCE042D10EC89007C48AE /* lblack.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = lblack.ttf; sourceTree = "<group>"; };
+		B1B910312D05479A007FEF16 /* aoe2-synthetic-data.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "aoe2-synthetic-data.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1CA3FD12D094254004AA52F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B1CA3FD32D094254004AA52F /* AnnotationFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationFactory.swift; sourceTree = "<group>"; };
+		B1CA3FD42D094254004AA52F /* aoe2_synthetic_data.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = aoe2_synthetic_data.entitlements; sourceTree = "<group>"; };
+		B1CA3FD52D094254004AA52F /* aoe2_synthetic_dataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aoe2_synthetic_dataApp.swift; sourceTree = "<group>"; };
+		B1CA3FD62D094254004AA52F /* AOEMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AOEMenuView.swift; sourceTree = "<group>"; };
+		B1CA3FD72D094254004AA52F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B1CA3FD82D094254004AA52F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B1CA3FD92D094254004AA52F /* GameAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameAnnotation.swift; sourceTree = "<group>"; };
+		B1CA3FDA2D094254004AA52F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1CA3FDB2D094254004AA52F /* PNGSavingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PNGSavingView.swift; sourceTree = "<group>"; };
+		B1CA3FDC2D094254004AA52F /* ResourceAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceAnnotation.swift; sourceTree = "<group>"; };
+		B1CA3FDD2D094254004AA52F /* saveAsPNG.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = saveAsPNG.swift; sourceTree = "<group>"; };
+		B1CA3FDE2D094254004AA52F /* VillagerAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VillagerAnnotation.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		B1B9102E2D05479A007FEF16 /* Frameworks */ = {
@@ -25,10 +84,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B14EA01C2D17688500FC1354 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B14EA01A2D17687B00FC1354 /* ImageTag.swift */,
+				B14EA0182D17686900FC1354 /* CivType.swift */,
+				B14EA0162D17685500FC1354 /* Resource.swift */,
+				B14EA0142D17683400FC1354 /* Annotations.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B18DCDFC2D10EC72007C48AE /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B18DCDFD2D10EC89007C48AE /* centbd.ttf */,
+				B14EA00C2D16820000FC1354 /* lbrite.ttf */,
+				B18DCDFE2D10EC89007C48AE /* centit_.ttf */,
+				B18DCDFF2D10EC89007C48AE /* centrg_.ttf */,
+				B18DCE002D10EC89007C48AE /* georgia.ttf */,
+				B18DCE012D10EC89007C48AE /* georgiab.ttf */,
+				B18DCE022D10EC89007C48AE /* georgiai.ttf */,
+				B18DCE032D10EC89007C48AE /* georgiaz.ttf */,
+				B14EA00E2D16821600FC1354 /* lbrited.ttf */,
+				B18DCE042D10EC89007C48AE /* lblack.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		B1B910282D05479A007FEF16 = {
 			isa = PBXGroup;
 			children = (
-				B1B910332D05479A007FEF16 /* aoe2-synthetic-data */,
+				B1CA3FDF2D094254004AA52F /* aoe2-synthetic-data */,
 				B1B910322D05479A007FEF16 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -39,6 +126,40 @@
 				B1B910312D05479A007FEF16 /* aoe2-synthetic-data.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		B1CA3FD22D094254004AA52F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B1CA3FD12D094254004AA52F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B1CA3FDF2D094254004AA52F /* aoe2-synthetic-data */ = {
+			isa = PBXGroup;
+			children = (
+				B18DCDFC2D10EC72007C48AE /* Fonts */,
+				B1CA3FD52D094254004AA52F /* aoe2_synthetic_dataApp.swift */,
+				B1CA3FD62D094254004AA52F /* AOEMenuView.swift */,
+				B14EA01C2D17688500FC1354 /* Model */,
+				B14EA0122D17661900FC1354 /* SyntheticDataManager.swift */,
+				B14EA0672D19417900FC1354 /* ComprehensiveSyntheticDataManager.swift */,
+				B1CA3FD82D094254004AA52F /* ContentView.swift */,
+				B1CA3FD32D094254004AA52F /* AnnotationFactory.swift */,
+				B1CA3FDE2D094254004AA52F /* VillagerAnnotation.swift */,
+				B14EA0652D189D5300FC1354 /* AgeAnnotation.swift */,
+				B14EA0102D1751D200FC1354 /* AgeQueueAnnotation.swift */,
+				B1CA3FDC2D094254004AA52F /* ResourceAnnotation.swift */,
+				B1CA3FD92D094254004AA52F /* GameAnnotation.swift */,
+				B1CA3FDB2D094254004AA52F /* PNGSavingView.swift */,
+				B1CA3FDD2D094254004AA52F /* saveAsPNG.swift */,
+				B1CA3FD42D094254004AA52F /* aoe2_synthetic_data.entitlements */,
+				B1CA3FDA2D094254004AA52F /* Info.plist */,
+				B1CA3FD72D094254004AA52F /* Assets.xcassets */,
+				B1CA3FD22D094254004AA52F /* Preview Content */,
+			);
+			path = "aoe2-synthetic-data";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -55,9 +176,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				B1B910332D05479A007FEF16 /* aoe2-synthetic-data */,
 			);
 			name = "aoe2-synthetic-data";
 			packageProductDependencies = (
@@ -104,6 +222,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B14EA00D2D16820000FC1354 /* lbrite.ttf in Resources */,
+				B1CA3FE02D094254004AA52F /* Preview Assets.xcassets in Resources */,
+				B18DCE052D10EC89007C48AE /* centbd.ttf in Resources */,
+				B18DCE062D10EC89007C48AE /* centrg_.ttf in Resources */,
+				B18DCE072D10EC89007C48AE /* georgiaz.ttf in Resources */,
+				B18DCE082D10EC89007C48AE /* georgiai.ttf in Resources */,
+				B18DCE092D10EC89007C48AE /* lblack.ttf in Resources */,
+				B18DCE0A2D10EC89007C48AE /* centit_.ttf in Resources */,
+				B18DCE0B2D10EC89007C48AE /* georgia.ttf in Resources */,
+				B14EA00F2D16821600FC1354 /* lbrited.ttf in Resources */,
+				B18DCE0C2D10EC89007C48AE /* georgiab.ttf in Resources */,
+				B1CA3FE12D094254004AA52F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,6 +244,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B14EA0192D17686900FC1354 /* CivType.swift in Sources */,
+				B14EA0172D17685500FC1354 /* Resource.swift in Sources */,
+				B1CA3FE32D094254004AA52F /* AnnotationFactory.swift in Sources */,
+				B1CA3FE42D094254004AA52F /* aoe2_synthetic_dataApp.swift in Sources */,
+				B14EA0152D17683400FC1354 /* Annotations.swift in Sources */,
+				B1CA3FE52D094254004AA52F /* AOEMenuView.swift in Sources */,
+				B14EA0662D189D5300FC1354 /* AgeAnnotation.swift in Sources */,
+				B14EA01B2D17687B00FC1354 /* ImageTag.swift in Sources */,
+				B1CA3FE62D094254004AA52F /* ContentView.swift in Sources */,
+				B14EA0132D17661900FC1354 /* SyntheticDataManager.swift in Sources */,
+				B1CA3FE72D094254004AA52F /* GameAnnotation.swift in Sources */,
+				B14EA0682D19417900FC1354 /* ComprehensiveSyntheticDataManager.swift in Sources */,
+				B1CA3FE82D094254004AA52F /* PNGSavingView.swift in Sources */,
+				B1CA3FE92D094254004AA52F /* ResourceAnnotation.swift in Sources */,
+				B1CA3FEA2D094254004AA52F /* saveAsPNG.swift in Sources */,
+				B14EA0112D1751DC00FC1354 /* AgeQueueAnnotation.swift in Sources */,
+				B1CA3FEB2D094254004AA52F /* VillagerAnnotation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,11 +399,13 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "aoe2-synthetic-data/Info.plist";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vincent-lazzara.aoe2-synthetic-data";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -279,11 +428,13 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "aoe2-synthetic-data/Info.plist";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vincent-lazzara.aoe2-synthetic-data";
 				PRODUCT_NAME = "$(TARGET_NAME)";

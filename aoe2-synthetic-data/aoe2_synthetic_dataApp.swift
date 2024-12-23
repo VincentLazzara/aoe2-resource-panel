@@ -11,7 +11,8 @@ import SwiftUI
 struct aoe2_synthetic_dataApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+          //  SyntheticDataManager()
+            ComprehensiveSyntheticDataManager()
         }
     }
 }
